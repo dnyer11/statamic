@@ -1,0 +1,33 @@
+<div class="hero">
+    <div class="hero-background" style="background-image: url('/assets/img/img-bedroom.jpg');">
+        <div class="overlay"></div>
+
+        <section class="regular">
+            <h1 class="special">
+                A smarter way to manage your hotel
+                <small>Quore is a tool like no other – one that changes the way you work with colleagues, interact with guests, and operate your hotel.</small>
+            </h1>
+        </section>
+    </div>
+</div>
+
+<section class="regular">
+
+    <h1 class="special centered">
+        <small>The Statamic</small>
+        Custom Theme
+    </h1>
+
+    <div class="centered">{{ content }}</div>
+
+	<article class="list">
+		{{ collection:blog :limit="posts" scope="tag" }}
+			{{ partial:block }}
+		{{ /collection:blog }}
+	</article>
+
+    <div class="read-more">
+        <a href="{{ link to='blog' }}">Read the rest of the blog</a>
+    </div>
+
+</section>
